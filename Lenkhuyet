@@ -1,0 +1,145 @@
+0393501327
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Luna - Gửi thư cho Phương</title>
+  <style>
+    body {
+      font-family: "Courier New", monospace;
+      background-color: #fff5cc;
+      padding: 20px;
+    }
+    #chat {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 10px;
+      background: #fff;
+      min-height: 200px;
+      max-height: 70vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .message {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+      white-space: pre-wrap;
+      max-width: 90%;
+    }
+    .dora {
+      background: #d1f7c4;
+      align-self: flex-start;
+    }
+    .user {
+      background: #cce5ff;
+      align-self: flex-end;
+      text-align: right;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      margin-top: 10px;
+    }
+    h2 {
+      color: #a2004f;
+    }
+  </style>
+</head>
+<body>
+
+<h2>🧸 Gửi cho người chủ mới của tớ – Phương:</h2>
+<div id="chat">
+  <div class="message dora"> hahaha.... cuối cùng cũng chờ được ngày cậu tới đây. cậu cũng không tệ đó nha, giải được mật thư do chính tui nằm mấy đêm vắt óc suy nghĩ mới ra được lun đó
+thôi thì giải được mật thư của tớ cũng xem như chúng ta có duyên phận rồi😆😆
+à quên tui chưa giới thiệu bản thân😁👉👈
+a hèm....!!
+   xin chào cô chủ nhỏ của tớ. tớ biết cậu tên là phương rồì. còn tớ, Tớ là một chú mèo bông nhỏ, cậu có thể gọi tớ là Luna. Hôm nay ra mắt cô chủ mới, tớ không có gì nhiều, chỉ vừa kịp chuẩn bị cho cậu một bức thư nhỏ. Cậu muốn tớ đọc nó không?Nếu muốn, hãy nói <b>"có"</b> với tớ nha!</div>
+</div>
+
+<input id="userInput" placeholder="Nhập ở đây...">
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+const chatDiv = document.getElementById('chat');
+const input = document.getElementById('userInput');
+
+const letterParts = [
+  "Xin chào cậu...Tớ tên là Luna",
+  " cậu biết không tớ được sinh ra vào một buổi chiều hoàng hôn tuyệt đẹp đó...!",
+  "Khi mặt trời đổ ánh sáng dịu dàng qua khung cửa sổ, chủ cũ của tớ bắt đầu đan những mũi len đầu tiên",
+  "Những sợi len mềm mại ấy không chỉ ấm áp, mà còn chất chứa bên trong một nỗi niềm nhỏ bé – một điều gì đó mà có lẽ không thể gọi tên mà chỉ có thể cảm nhận bằng một tâm hồn đầy thơ mộng",
+  "và thế là...",
+  "tớ được sinh ra như thế đó. từ những đường chỉ vụng về của cậu chủ, từ những ánh mắt những đêm trăng và có cả một cái j đó không nói nên lời, ấy thế mà bằng một thế lực thần kì nào đó tớ đã được sinh ra",
+  "và tớ đã trở thành 1 thành viên chính thức của family len kkhuyết đó😁😁😁",
+  "cậu biết không, những đêm trăng khuyết những ngày gió hạ ở bên cậu chủ đối với tớ đã trở thành một kỉ niệm tuyệt vời. mỗi ánh mắt, mỗi nụ cười của cậu chủ tớ đều nhớ rất rõ.",
+  "môi cậu chủ vẫn vậy luôn mím chặt ánh mắt ngước thắng lên bầu trời đưa ánh nhìn xa xăm rồi bất giác mỉm cười mỗi khi quay sang nhìn tớ ",
+  "tớ vẫn luôn nghĩ vì sao nhưng chắc Không phải vì tớ đẹp đâu – tớ chỉ là một bé mèo len giản dị thôi –Nhưng có lẽ trong ánh mắt đó là cả một ý nghĩ về một điều kỳ diệu mang tên “duyên phận",
+  "Rồi một lần nọ, khi những tia nắng cuối ngày đã ngả sang màu cam mật ong,Tớ ngồi bên cửa sổ cùng cậu chủ.Gió nhẹ lướt qua, cuốn theo mùi nắng và một vài câu thơ ai đó để quên vào trong không khí",
+  "Hoàng hôn chiều cuối hạ\nMây nhẹ nhàng lướt qua\nHương thơm thảng trong gió\nNhung nhớ nhẹ bóng tà\n",
+  "Cậu chủ không nói gì, chỉ khẽ đặt tớ lên bàn rồi thở dài.Hôm đó, cậu ấy thì thầm: luna này, cậu muốn có chủ mới không, ở bên đó cậu sẽ có một cuộc sống mới phong phú và đẹp đẽ hơn ở đây....\nchắc là cậu nên có một người chủ mới rồi...!",
+  "Và thế là, tớ đến đây – bên cậu.Không biết cậu có thích tớ không, nhưng tớ hy vọng khi chạm vào tớ,Cậu sẽ thấy một chút gì đó mềm mại –Như sự tử tế của một người tình cờ quen,Như ánh nắng chiều dịu nhẹ,Như một cuộc gặp gỡ nhỏ thoáng qua nhưng cũng đủ để khi nhìn lại cũng khiến người ta mỉm cười ",
+  "Nếu một ngày nào đó cậu thấy lòng nặng nề,Cứ thử ôm tớ một chút.Tớ không biết nói chuyện, nhưng tớ biết cách im lặng và lắng nghe một cách ấm áp",
+  "cậu này....!",
+  "nếu có duyên thì hãy cùng tớ ghé thăm gia đình len khuyết của cậu chủ và những thành viên bé bông ở đó cùng với tớ nheee...!",
+  "Luna\nbé mèo được đan từ ánh nhìn và hai chữ duyên phận 🌙🧶 "
+];
+
+let partIndex = 0;
+let doneLetter = false;
+
+input.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    const text = input.value.trim().toLowerCase();
+    if (text !== '') {
+      addMessage(input.value, 'user');
+      input.value = '';
+      if (!doneLetter && text === 'có') {
+        input.disabled = true;
+        showNextPart();
+      }
+    }
+  }
+});
+
+function addMessage(text, sender = 'dora', callback) {
+  const msg = document.createElement('div');
+  msg.className = 'message ' + sender;
+  msg.textContent = '';
+  chatDiv.appendChild(msg);
+  chatDiv.scrollTop = chatDiv.scrollHeight;
+
+  let i = 0;
+  const interval = setInterval(() => {
+    msg.textContent += text.charAt(i);
+    i++;
+    chatDiv.scrollTop = chatDiv.scrollHeight;
+    if (i >= text.length) {
+      clearInterval(interval);
+      if (callback) setTimeout(callback, 300);
+    }
+  }, 70);
+}
+
+function showNextPart() {
+  if (partIndex >= letterParts.length) {
+    input.disabled = false;
+    doneLetter = true;
+    return;
+  }
+  const text = letterParts[partIndex];
+  partIndex++;
+  addMessage(text, 'dora', showNextPart);
+}
+
+});
+</script>
+
+</body>
+</html> 
+https://www.facebook.com/share/19VpeaDaQg/
+
